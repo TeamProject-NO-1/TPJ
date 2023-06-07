@@ -65,6 +65,9 @@ html, body{
 }
 
 /* page_schroll 파트 */
+.main .page_schroll a{
+  margin-right: 2%;  
+}
 
 /* write_ctt 파트 */
 .write_ctt{
