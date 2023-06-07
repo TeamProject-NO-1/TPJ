@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list</title>
+    <link rel="stylesheet" href="./css/list.css" />
   </head>
   <body>
-    게시판자리입니다.
+    <!-- header 파트 -->
+    <div class="header">
+      <div id="home"><a href="./main_home.html">🏠홈화면</a></div>
+      <div id="board"><a href="./list.html">📖게시판</a></div>
+      <div id="write"><a href="">📝글작성</a></div>
+      <div id="else"></div>
+    </div>
+    <!-- // header 파트 -->
+
+    <!-- main 파트(content = ctt) -->
+    <div class="main">
+      <h1 id="title">📖게시판</h1>
+      <hr />
+      <input type="text" placeholder="Q 검색어를 입력하세요." />
+      <div class="title">
+        <div id="ctt_num">글번호</div>
+        <div id="ctt_tit">제목</div>
+        <div id="ctt_writer">작성자</div>
+        <div id="ctt_click">조회수</div>
+        <div id="ctt_date">작성일자</div>
+      </div>
+      <div class="page_schroll"></div>
+      <div class="write_ctt">글쓰기</div>
+    </div>
+    <!-- // main 파트 -->
   </body>
 </html>
