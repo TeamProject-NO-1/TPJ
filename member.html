@@ -1,10 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>member</title>
+    <style>
+      #container {
+        width: 100%;
+        /* height: 1024px; */
+        background-color: #ffd233;
+        position: fixed;
+      }
+
+      #bolder {
+        width: 95%;
+        margin: 2%;
+      }
+
+      #staffBox {
+        background-color: #ffd233;
+      }
+      #staffbase {
+        width: 25%;
+        position: absolute;
+        bottom: 6%;
+        right: 5%;
+      }
+      #member {
+        width: 35%;
+        position: absolute;
+        top: 7%;
+        left: 5%;
+      }
+      #smallText {
+        width: 50%;
+        position: absolute;
+        bottom: 20%;
+        left: 25%;
+      }
+      #underLine {
+        width: 70%;
+        position: absolute;
+        top: 55%;
+        left: 13%;
+      }
+      #message {
+        width: 5%;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+      }
+      #boom_left {
+        width: 10%;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+      }
+      #boom_right {
+        width: 10%;
+        position: absolute;
+        bottom: 46%;
+        right: 17%;
+      }
+      #pen {
+        width: 8%;
+        position: absolute;
+        bottom: 14%;
+        right: 10%;
+      }
+      #memo1 {
+        width: 10%;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+      }
+
+      #next {
+        width: 5%;
+        position: absolute;
+        top: 45%;
+        right: 6%;
+      }
+      #next:hover {
+        width: 7%;
+      }
+      #pre {
+        width: 5%;
+        position: absolute;
+        top: 45%;
+        left: 6%;
+      }
+      #pre:hover {
+        width: 7%;
+      }
+      #icon1 {
+        width: 12%;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+      }
+      #icon2 {
+        width: 12%;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+      }
+      #icon3 {
+        width: 12%;
+        position: absolute;
+        top: 35%;
+        right: 25%;
+      }
+      #p1 {
+        font-size: 1.3rem;
+        font-family: sans-serif, verdana;
+        position: absolute;
+        top: 28%;
+        left: 5%;
+      }
+      #p2 {
+        font-size: 1.3rem;
+        position: absolute;
+        top: 15%;
+        left: 28%;
+      }
+      #p3 {
+        font-size: 1.3rem;
+        position: absolute;
+        top: 22%;
+        right: 15%;
+      }
+      #arrow1 {
+        width: 7%;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+      }
+      #arrow2 {
+        width: 6%;
+        position: absolute;
+        top: 22%;
+        left: 40%;
+      }
+      #arrow3 {
+        width: 5%;
+        position: absolute;
+        top: 28%;
+        right: 25%;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <img src="/img/home/Vector 5.png" id="bolder" />
+      <img src="/img/member/Member Introduce.png" id="member" />
+      <div id="saffBox">
+        <img src="/img/home/Staffbase.png" id="staffbase" />
+      </div>
+      <img src="/img/home/Sometimes.png" id="smallText" />
+      <img src="/img/home/Group 2214.png" id="underLine" />
+      <img src="/img/home/Message.png" id="message" />
+      <img src="/img/home/boom_left.png" id="boom_left" />
+      <img src="/img/home/boom_right.png" id="boom_right" />
+      <img src="/img/home/pen.png" id="pen" />
+      <img src="/img/home/memo1.png" id="memo1" />
+
+      <!-- 아이콘 -->
+      <img
+        src="/img/member/twemoji_grinning-face-with-big-eyes.png"
+        id="icon1"
+      />
+      <img src="/img/member/twemoji_slightly-smiling-face.png" id="icon2" />
+      <img src="/img/member/twemoji_neutral-face.png" id="icon3" />
+      <!-- 텍스트 -->
+      <p id="p1">#LEE.J.Y<br />figma&concept</p>
+      <p id="p2">#SON.C.J<br />Team Leader<br />CSS Design</p>
+      <p id="p3">#GOO.B.O<br />Javascript</p>
+      <img src="/img/member/Arrow1.png" id="arrow1" />
+      <img src="/img/member/Arrow2.png" id="arrow2" />
+      <img src="/img/member/Arrow3.png" id="arrow3" />
+      <!-- 페이지이동 -->
+      <a href="/home.html">
+        <img src="/img/member/pre.png" id="pre" />
+      </a>
+      <a href="/contents.html">
+        <img src="/img/home/next.png" id="next" />
+      </a>
+    </div>
+  </body>
 </html>
