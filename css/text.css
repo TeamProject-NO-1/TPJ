@@ -22,7 +22,6 @@ body {
 }
 .container input::placeholder{
     font-size: 20px;
-    text-align: center;
 }
 
 /* header 파트 */
@@ -55,7 +54,7 @@ body {
     font-size: 18px;
     margin: 1% 0 2% 0;
     width: 100%;
-    height: 30%;
+    height: 70%;
 }
 .title_name {
     width: 100%;
@@ -66,11 +65,19 @@ body {
 .footer{
     width: 100%;
     height: 15%;
+    margin-top: 8%; 
 }
 button {
-    width: 70px;
-    height: 40px;
-    font-size: 16px;
+    background: linear-gradient(180deg, #FFC700 0%, #FFEA79 29.17%, #FFD233 71.87%, #FFD233 100%), #FFFFFF;    font-size: 25px;
+    border: 3px solid black;
+    box-shadow: black 5px 5px;
+    width: 15%;
+    height: 60%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer button:first-child{
+    margin-right: 2%;
 }
 
 /* 이미지들 */
@@ -78,22 +85,25 @@ button {
     position: absolute;
 }
 #imgs1{
-    top: 78%;
-    right: 10%; 
+    width: 15%;
+    top: 93%;
+    left: 70%; 
 }
 #imgs2{
-    top: 5px;
-    right: 60%;
+    width: 18%;
+    top: 2%;
+    left: 20%;
 }
 #imgs3{
-    top: 20%;
-    right: 10px;
+    width: 12%;
+    top: 38%;
+    left: 80%;
 }
 #imgs4{
-    top: 10%;
-    right: 80px;
+    top: 70%;
+    left: 40%;
 }
 #imgs5{
-    top: 60%;
-    right: 65%;
+    top: 8%;
+    left: 80%;
 }
