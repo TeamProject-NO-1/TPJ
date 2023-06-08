@@ -12,7 +12,6 @@ body {
 
 /* 내용 파트 */
 .container {
-    border: 5px solid purple;
     padding: 0 3%;
     height: 90%;
     width: 90%;
@@ -81,17 +80,17 @@ button {
 }
 
 /* 이미지들 */
-:is(#imgs1, #imgs2, #imgs3, #imgs4, #imgs5){
+:is(#imgs1, #imgs2, #imgs3, #imgs4, #imgs5, #imgs6){
     position: absolute;
 }
 #imgs1{
     width: 15%;
-    top: 93%;
-    left: 70%; 
+    top: 90%;
+    left: 82%; 
 }
 #imgs2{
     width: 18%;
-    top: 2%;
+    top: 0%;
     left: 20%;
 }
 #imgs3{
@@ -106,4 +105,10 @@ button {
 #imgs5{
     top: 8%;
     left: 80%;
+}
+#imgs6{
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 98%;
 }
