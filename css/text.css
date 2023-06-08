@@ -1,84 +1,99 @@
+/* 전체 윤곽 */
+html, body{
+    height: 100%;
+    width: 100%;
+}
 body {
     background-color:rgb(255, 210, 51);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* 내용 파트 */
 .container {
-    border: 2px solid rgb(218, 61, 218);
-    padding: 20px;
-    margin: 3%;
-    height: 100%;
-   
-   
+    border: 5px solid purple;
+    padding: 0 3%;
+    height: 90%;
+    width: 90%;
+}
+:is(.title_day, .title_input, .title_text, .title_name){
+    border: 3px solid purple;
+}
+.container input::placeholder{
+    font-size: 20px;
+    text-align: center;
 }
 
+/* header 파트 */
+.header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .text_title {
+    font-weight: bold;
     font-size: 45px;
-    margin-right: 43%;
-    
 }
-
 .title_day {
-    border: 2px solid rgb(218, 61, 218);
     width: 45%;
-    height: 40px;
-    text-align:center
-    
+    height: 50%;
 }
 
+/* main 파트 */
+.main{
+    width: 100%;
+    height: 60%;
+}
 .title_input {
-    border: 2px solid rgb(218, 61, 218);
     width: 100%;
-    height: 40px;
-    text-align:center
-    
+    height: 15%;
 }
-
 .title_text {
-    border: 2px solid rgb(218, 61, 218);
+    font-size: 18px;
+    margin: 1% 0 2% 0;
     width: 100%;
-    resize: none;
-    
-
+    height: 30%;
 }
-
 .title_name {
-    border: 2px solid rgb(218, 61, 218);
     width: 100%;
-    height: 40px;
-    text-align:center
+    height: 15%;
 }
 
+/* footer 파트 */
+.footer{
+    width: 100%;
+    height: 15%;
+}
 button {
     width: 70px;
     height: 40px;
     font-size: 16px;
-    
 }
 
-.imgs1{
+/* 이미지들 */
+:is(#imgs1, #imgs2, #imgs3, #imgs4, #imgs5){
     position: absolute;
-    top: 78%;
-    right: 10%;
-    
 }
-.imgs2{
-    position: absolute;
+#imgs1{
+    top: 78%;
+    right: 10%; 
+}
+#imgs2{
     top: 5px;
     right: 60%;
 }
-.imgs3{
-    position: absolute;
+#imgs3{
     top: 20%;
     right: 10px;
 }
-.imgs4{
-    position: absolute;
+#imgs4{
     top: 10%;
     right: 80px;
 }
-.imgs5{
-    position: absolute;
+#imgs5{
     top: 60%;
     right: 65%;
 }
