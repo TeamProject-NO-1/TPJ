@@ -43,28 +43,25 @@ tr, td{
 }
 
 /* 이미지들 */
-:is(#img1, a, #img3, #img4, #img5, #img6){
+:is(#img1, #img2, #img3, #img4, #img5, #img6){
     position: absolute;
 }
 #img1{
     top: 6%;
     left: 70%;
 }
-/* a{
+#img2{
+    width: 4%;
     top: 50%;
     left: 3%;
 }
-#img2{
-    width: 50%;
-}
 #img2:hover{
-    width: 80%;
-    transition: width 0.3s ease;
-} */
+    width: 5%;
+}
 #img3{
-    width: 15%;
-    top: 65%;
-    left: 8%;
+    width: 12%;
+    top: 70%;
+    left: 10%;
 }
 #img4{
     width: 12%;
