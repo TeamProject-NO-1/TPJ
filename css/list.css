@@ -50,13 +50,13 @@ tr, td{
     top: 6%;
     left: 70%;
 }
-#img2{
-    width: 4%;
+a{
     top: 50%;
     left: 3%;
 }
 #img2:hover{
-    width: 5%;
+    width: 80%;
+    transition: width 0.3s ease;
 }
 #img3{
     width: 12%;

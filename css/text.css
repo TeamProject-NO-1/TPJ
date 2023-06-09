@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+html, body {
+    background-color:rgb(255, 210, 51);
+    width: 100%;
+    height: 100%;
+    
+=======
 /* 전체 윤곽 */
 html, body{
     height: 100%;
@@ -8,10 +15,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
 }
 
 /* 내용 파트 */
 .container {
+<<<<<<< HEAD
+    border: 5px solid purple;
+    padding: 20px;
+    margin: 3%;
+    height: 100%;
+   
+   
+=======
     padding: 0 3%;
     height: 90%;
     width: 90%;
@@ -21,6 +37,7 @@ body {
 }
 .container input::placeholder{
     font-size: 20px;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
 }
 
 /* header 파트 */
@@ -32,10 +49,21 @@ body {
     justify-content: space-between;
 }
 .text_title {
+<<<<<<< HEAD
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 40%;
+    
+=======
     font-weight: bold;
     font-size: 45px;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
 }
 .title_day {
+<<<<<<< HEAD
+    border: 5px solid purple;
+=======
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 45%;
     height: 50%;
 }
@@ -46,16 +74,28 @@ body {
     height: 60%;
 }
 .title_input {
+<<<<<<< HEAD
+    border: 5px solid purple;
+=======
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 100%;
     height: 15%;
 }
 .title_text {
+<<<<<<< HEAD
+    border: 5px solid purple;
+=======
     font-size: 18px;
     margin: 1% 0 2% 0;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 100%;
     height: 70%;
 }
 .title_name {
+<<<<<<< HEAD
+    border: 5px solid purple;
+=======
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 100%;
     height: 15%;
 }
