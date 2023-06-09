@@ -25,7 +25,7 @@ p{
 
 /* 표 부분 */
 .Table_Area{
-    width: 95%;
+    width: 93%;
     margin-left: 2%;
     margin-top: -3%;
 }
@@ -37,22 +37,28 @@ tr, td{
     font-weight: bold;
     background-color: white;
     border: 3px solid black;
+    border-radius: 3px;
     box-shadow: 1px 2px;
     padding: 10px;
 }
 
 /* 이미지들 */
-:is(#img1, #img2, #img3, #img4, #img5, #img6){
+:is(#img1, a, #img3, #img4, #img5, #img6){
     position: absolute;
 }
 #img1{
     top: 6%;
     left: 70%;
 }
-#img2{
-    width: 4%;
-    top: 40%;
+a{
+    top: 50%;
     left: 3%;
+}
+a #img2{
+    width: 50%;
+}
+a #img2:hover{
+    width: 80%;
 }
 #img3{
     width: 15%;
