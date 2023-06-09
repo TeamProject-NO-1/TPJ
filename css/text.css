@@ -1,87 +1,154 @@
+<<<<<<< HEAD
 html, body {
     background-color:rgb(255, 210, 51);
     width: 100%;
     height: 100%;
     
+=======
+/* 전체 윤곽 */
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color:rgb(255, 210, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
 }
 
+/* 내용 파트 */
 .container {
+<<<<<<< HEAD
     border: 5px solid purple;
     padding: 20px;
     margin: 3%;
     height: 100%;
    
    
+=======
+    padding: 0 3%;
+    height: 90%;
+    width: 90%;
+}
+:is(.title_day, .title_input, .title_text, .title_name){
+    border: 3px solid purple;
+}
+.container input::placeholder{
+    font-size: 20px;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
 }
 
+/* header 파트 */
+.header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .text_title {
+<<<<<<< HEAD
     font-size: 50px;
     font-weight: bold;
     margin-right: 40%;
     
+=======
+    font-weight: bold;
+    font-size: 45px;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
 }
-
 .title_day {
+<<<<<<< HEAD
     border: 5px solid purple;
+=======
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 45%;
-    height: 40px;
-    text-align:center
-    
+    height: 50%;
 }
 
+/* main 파트 */
+.main{
+    width: 100%;
+    height: 60%;
+}
 .title_input {
+<<<<<<< HEAD
     border: 5px solid purple;
+=======
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 100%;
-    height: 40px;
-    text-align:center
-    
+    height: 15%;
 }
-
 .title_text {
+<<<<<<< HEAD
     border: 5px solid purple;
+=======
+    font-size: 18px;
+    margin: 1% 0 2% 0;
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 100%;
-    resize: none;
-    
-
+    height: 70%;
 }
-
 .title_name {
+<<<<<<< HEAD
     border: 5px solid purple;
+=======
+>>>>>>> 59a7dbe9421e0786eea1e51d673168dccce418a0
     width: 100%;
-    height: 40px;
-    text-align:center
+    height: 15%;
 }
 
+/* footer 파트 */
+.footer{
+    width: 100%;
+    height: 15%;
+    margin-top: 8%; 
+}
 button {
-    width: 70px;
-    height: 40px;
-    font-size: 16px;
-    
+    background: linear-gradient(180deg, #FFC700 0%, #FFEA79 29.17%, #FFD233 71.87%, #FFD233 100%), #FFFFFF;    font-size: 25px;
+    border: 3px solid black;
+    box-shadow: black 5px 5px;
+    width: 15%;
+    height: 60%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer button:first-child{
+    margin-right: 2%;
 }
 
-.imgs1{
+/* 이미지들 */
+:is(#imgs1, #imgs2, #imgs3, #imgs4, #imgs5, #imgs6){
     position: absolute;
-    top: 78%;
-    right: 10%;
-    
 }
-.imgs2{
-    position: absolute;
-    top: 5px;
-    right: 60%;
+#imgs1{
+    width: 15%;
+    top: 90%;
+    left: 82%; 
 }
-.imgs3{
-    position: absolute;
-    top: 20%;
-    right: 10px;
+#imgs2{
+    width: 18%;
+    top: 0%;
+    left: 20%;
 }
-.imgs4{
-    position: absolute;
-    top: 10%;
-    right: 80px;
+#imgs3{
+    width: 12%;
+    top: 38%;
+    left: 80%;
 }
-.imgs5{
-    position: absolute;
-    top: 60%;
-    right: 65%;
+#imgs4{
+    top: 70%;
+    left: 40%;
+}
+#imgs5{
+    top: 8%;
+    left: 80%;
+}
+#imgs6{
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    height: 98%;
 }

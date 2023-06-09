@@ -14,19 +14,20 @@ body{
 .All{
     width: 90%;
     height: 90%;
-    border: 5px solid purple;
     padding: 0 3%;
 }
 
 /* 제목 부분 */
 p{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
 }
 
 /* 표 부분 */
 .Table_Area{
-    width: 100%;
+    width: 93%;
+    margin-left: 2%;
+    margin-top: -3%;
 }
 table{
     width: 100%;
@@ -36,35 +37,48 @@ tr, td{
     font-weight: bold;
     background-color: white;
     border: 3px solid black;
+    border-radius: 3px;
     box-shadow: 1px 2px;
     padding: 10px;
 }
 
 /* 이미지들 */
-:is(#img1, #img2, #img3, #img4, #img5){
+:is(#img1, a, #img3, #img4, #img5, #img6){
     position: absolute;
 }
 #img1{
     top: 6%;
     left: 70%;
 }
+a{
+    top: 50%;
+    left: 3%;
+}
 #img2{
-    width: 5%;
-    top: 40%;
-    left: 0%;
+    width: 50%;
+}
+#img2:hover{
+    width: 80%;
+    transition: width 0.3s ease;
 }
 #img3{
     width: 15%;
     top: 65%;
-    left: 3%;
+    left: 8%;
 }
 #img4{
-    width: 15%;
+    width: 12%;
     top: 65%;
-    left:87%;
+    left: 87%;
 }
 #img5{
     width: 15%;
-    top: 93%;
-    left:70%;
+    top: 90%;
+    left: 82%;
+}
+#img6{
+    width: 96%;
+    height: 93%;
+    top: 5%;
+    left: 2%;
 }

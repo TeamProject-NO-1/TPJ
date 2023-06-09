@@ -1,0 +1,96 @@
+html, body{
+  width: 100%;
+  height: 100%;
+}
+#container {
+    width: 100%;
+    /* height: 1024px; */
+    background-color: #ffd233;
+    position: fixed;
+    height:100%
+  }
+
+  #bolder {
+    width: 95%;
+    height:95%;
+    margin: 2%;
+  }
+  #mainText {
+    width: 50%;
+    /* z-index:100: */
+    position: absolute;
+    top: 40%;
+    left: 25%;
+  }
+  #staffBox {
+    background-color: #ffd233;
+  }
+  #staffbase {
+    width: 25%;
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
+  }
+  #smallText {
+    width: 50%;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+  }
+  #underLine {
+    width: 70%;
+    position: absolute;
+    top: 55%;
+    left: 13%;
+  }
+  #message {
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
+  #next {
+    width: 5%;
+    position: absolute;
+    top: 45%;
+    right: 6%;
+  }
+  #next:hover {
+    width: 7%;
+  }
+  #ship_it {
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
+  #boom_left {
+    width: 10%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+  #boom_right {
+    width: 10%;
+    position: absolute;
+    bottom: 35%;
+    right: 12%;
+  }
+  #pen {
+    width: 8%;
+    position: absolute;
+    bottom: 14%;
+    right: 8%;
+  }
+  #memo1 {
+    width: 10%;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  #memo2 {
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
