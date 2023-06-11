@@ -80,35 +80,42 @@ button {
 }
 
 /* 이미지들 */
-:is(#imgs1, #imgs2, #imgs3, #imgs4, #imgs5, #imgs6){
+/* :is(#imgs1, #imgs2, #imgs3, #imgs4, #imgs5, #imgs6){
     position: absolute;
-}
+} */
+
 #imgs1{
+    position: absolute;
     width: 15%;
-    top: 90%;
+    top: 92%;
     left: 82%; 
 }
 #imgs2{
+    position: absolute;
     width: 18%;
     top: 0%;
     left: 20%;
 }
 #imgs3{
+    position: absolute;
     width: 12%;
     top: 38%;
     left: 80%;
 }
 #imgs4{
+    position: absolute;
     top: 70%;
     left: 40%;
 }
 #imgs5{
+    position: absolute;
     top: 8%;
     left: 80%;
 }
 #imgs6{
+    position: absolute;
     top: 1%;
     left: 2%;
     width: 96%;
-    height: 98%;
+    height: 96%;
 }

@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const titleInput = document.querySelector("title_input")
     const titleText = document.querySelector("title_text")
     const titleName = document.querySelector("title_name")
+    const 등록버튼 = document.getElementById("create")
+    const 목록버튼 = document.getElementById("list")
 
     /* localStorage 부분 */
     // 구분 숫자메기는 건 forEach 인덱스로 붙이고

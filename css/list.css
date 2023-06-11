@@ -57,12 +57,16 @@
 
         a {
             width: 5%;
-            top: 50%;
-            left: 3%;
+            top: 45%;
+            left: 2%;
         }
 
         #img2 {
-            width: 70%;
+            width: 80%;
+        }
+
+        #img2:hover {
+            width: 90%;
         }
 
         #img3 {
@@ -85,7 +89,7 @@
 
         #img6 {
             width: 96%;
-            height: 93%;
+            height: 91%;
             top: 5%;
             left: 2%;
         }
