@@ -74,9 +74,14 @@ button {
     height: 60%;
     font-size: 30px;
     font-weight: bold;
+
 }
-.footer button:first-child{
-    margin-right: 2%;
+.footer button:hover{
+    box-shadow: inset black 5px 5px;
+    color: white;
+}
+.footer #create{
+    margin-right: 5%;
 }
 
 /* 이미지들 */
@@ -112,10 +117,10 @@ button {
     top: 8%;
     left: 80%;
 }
-#imgs6{
+/* #imgs6{
     position: absolute;
     top: 1%;
     left: 2%;
     width: 96%;
     height: 96%;
-}
+} */
