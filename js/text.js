@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /* 1. arr에 localStroage input속성에 값이 있으면 빈배열 출력 */
     // 아래 구문에서 푸쉬할 예정 => 제일 상단에 있지만 제일 마지막 느낌임
     let arr = JSON.parse(localStorage.getItem('input')) ?? []
-    
-    /* 2. 순번이 저장된 변수 */
-    let ct = 0
 
     /* 등록버튼을 누르면 -> localStroage에 저장되게하는 부분 */
     등록버튼.addEventListener('click', () => {
@@ -34,11 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
         alert('작성자를 입력해주세요.');
         titleName.focus();
       } else {
-        /* 2-1. 등록버튼이 누릴때마다 ct가 1씩 증가(list.html의 글번호) */
-        ct++
         /* 1-1. arr배열에 객체 형식으로 밀어주기 */
         arr.push({ 
-          순번: ct,
           제목: titleInput.value, 
           내용: titleText.value, 
           작성자: titleName.value, 
