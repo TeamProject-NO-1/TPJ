@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>text</title>
     <link rel="stylesheet" href="./css/text.css" />
-    <!-- <script src="./js/text.js"></script> -->
+    <script src="./js/text.js"></script>
   </head>
   <body>
     <!-- <div>
@@ -24,26 +24,26 @@
       <!-- header 파트 -->
       <div class="header">
         <p class="text_title">Text</p>
-        <input class="title_day" type="text" placeholder="날짜를 입력하세요." />
+        <!-- <input class="title_day" type="text" placeholder="날짜를 입력하세요." /> -->
       </div>
       <!-- // header 파트 -->
 
       <!-- main 파트 -->
       <div class="main">
-        <input class="title_input" type="text" placeholder="제목자리" />
+        <input id="title_input" type="text" placeholder="제목자리" />
         <textarea
-          class="title_text"
+          id="title_text"
           cols="30"
           rows="10"
           placeholder="내용을 입력하시오"
         ></textarea>
-        <input class="title_name" type="text" placeholder="닉넴자리" />
+        <input id="title_name" type="text" placeholder="닉넴자리" />
       </div>
       <!-- // main 파트 -->
 
       <!-- footer 파트 -->
       <div class="footer">
-        <a href="./list.html"><button id="create">등 록</button></a>
+        <button id="update">등 록</button>
         <a href="./list.html"><button id="list">목 록</button></a>
       </div>
       <!-- // footer 파트 -->
