@@ -25,12 +25,6 @@
         }
 
         /* 표 부분 */
-        .Table_Area {
-            width: 93%;
-            margin-left: 2%;
-            margin-top: -3%;
-        }
-
         table {
             width: 100%;
             text-align: center;
