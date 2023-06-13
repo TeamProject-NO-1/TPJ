@@ -58,12 +58,14 @@ html, body{
   }}
   
 
-  /* next */
+  /* arrow next */
   #next {
-    width: 6%;
+    width: 5%;
     position: absolute;
     top: 45%;
-    right: 4%;
+    right: 6%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
+
   }
   #next:hover {
     width: 7%;
@@ -127,7 +129,7 @@ html, body{
 
   /* 애니메이션 */
   h1{
-    color:#000;
+    
     position:absolute;
     top:38%;
     left:15%;
@@ -136,7 +138,7 @@ html, body{
   h1 span{
     animation:bounce 0.3s ease infinite alternate;
     font-family:"Titan one",cursive;
-    font-size:2em;color:#f3eeee;
+    font-size:2.2em;color:#f3eeee;
     text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
     0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
     0 6px 0 transparent,0 7px 0 transparent,
@@ -193,10 +195,13 @@ html, body{
   #underLine{
     display:none;
   }
+  h1{
+    left:20%;
+  }
   h1 span{
     animation:bounce 0.3s ease infinite alternate;
     font-family:"Titan one",cursive;
-    font-size:5em;color:#f3eeee;
+    font-size:4.2em;color:#f3eeee;
     text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
     0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
     0 6px 0 transparent,0 7px 0 transparent,
@@ -245,6 +250,11 @@ html, body{
     width:7%;
   }
 }
-
+#next {
+  animation: scale 0.5s ease infinite alternate;
+  }
+  @keyframes scale{100%{
+    width:6%;
+  }
 }
-  
+} 

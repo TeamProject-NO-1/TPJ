@@ -34,6 +34,7 @@ body {
 .text_title {
     font-weight: bold;
     font-size: 45px;
+    display:none;
 }
 .title_day {
     width: 45%;
@@ -44,6 +45,8 @@ body {
 .main{
     width: 100%;
     height: 60%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
+    
 }
 #title_input {
     width: 100%;
@@ -58,18 +61,24 @@ body {
 #title_name {
     width: 100%;
     height: 15%;
+    
 }
 
 /* footer 파트 */
 .footer{
+    
     width: 100%;
     height: 15%;
     margin-top: 8%; 
 }
+
+/* 버튼 */
 button {
+    
     background: linear-gradient(180deg, #FFC700 0%, #FFEA79 29.17%, #FFD233 71.87%, #FFD233 100%), #FFFFFF;    font-size: 25px;
     border: 3px solid black;
-    box-shadow: black 5px 5px;
+    border-radius:30px;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
     width: 15%;
     height: 60%;
     font-size: 30px;
@@ -89,33 +98,46 @@ button {
     position: absolute;
 } */
 
+/* staffbase */
 #imgs1{
+    max-width: 25%;
     position: absolute;
-    width: 15%;
-    top: 92%;
-    left: 82%; 
+    bottom: 4%;
+    right: 3%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25)); 
+    
 }
+
+/* 상단 연필 */
 #imgs2{
     position: absolute;
     width: 18%;
     top: 0%;
-    left: 20%;
+    left: 30%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
 }
+/* 중간 연필 */
 #imgs3{
     position: absolute;
     width: 12%;
     top: 38%;
     left: 80%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
 }
+/* 하단 메모 */
 #imgs4{
     position: absolute;
-    top: 70%;
-    left: 40%;
+    width:18%;
+    top: 80%;
+    left: 50%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
 }
+/* 상단 메모 */
 #imgs5{
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 80%;
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
 }
 /* #imgs6{
     position: absolute;
@@ -124,3 +146,46 @@ button {
     width: 96%;
     height: 96%;
 } */
+
+/* 리스트 */
+h1{
+    color:#000;
+    position:absolute;
+    top:5%;
+    left:5%;
+    height:10%;
+  }
+h1 span{
+    animation:bounce 0.5s ease infinite alternate;
+    font-family:"Titan one",cursive;
+    font-size:2.0em;color:#f3eeee;
+    text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
+    0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
+    0 6px 0 transparent,0 7px 0 transparent,
+    0 8px 0 transparent,0 9px 0 transparent,
+    0 10px 10px rgba(0,0,0,0.4);
+  }
+  h1 span:nth-child(0) {
+    animation-delay: 0.3s;
+  }
+  h1 span:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  h1 span:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  h1 span:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes bounce {
+    100% {
+      position:relative;
+      top:5%;
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+       0 3px 0 #ccc, 0 4px 0 #ccc,
+        0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
+         0 8px 0 #ccc, 0 9px 0 #ccc,
+        0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+  }

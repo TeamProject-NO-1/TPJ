@@ -129,6 +129,7 @@ html, body{
         position: absolute;
         top: 45%;
         right: 8%;
+        filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
         
       }
       #next:hover {
@@ -139,6 +140,7 @@ html, body{
         position: absolute;
         top: 45%;
         left: 6%;
+        filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
       }
       #pre:hover {
         width: 7%;
@@ -225,13 +227,93 @@ html, body{
           }
         }
 
+        /*반응형*/
         @media screen and (min-width:1500px) {
-          h1{
+          /* h1{
             position:absolute;
             top:8%;
-            left:5%;
+            left:5%; 
+          } */
+
+          h1{
+            position:absolute;
+            top:10%;
+            left:10%;
+            height:10%;
+            animation:moveIn 2.0s,
+            rotate 6.0s;
             
+          }
+          h1 span{
+            animation:bounce 1.0s ease infinite alternate;
+            font-family:"Titan one",cursive;
+            font-size:2.5em;color:#fff;
+            text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
+            0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
+            0 6px 0 transparent,0 7px 0 transparent,
+            0 8px 0 transparent,0 9px 0 transparent,
+            0 10px 10px rgba(0,0,0,0.4);
+          }
+  
+          
+          @keyframes moveIn{
+            from{
+              position:absolute;
+              top:-10%;
+            }
             
+            to{
+              position:absolute;
+              top:10%;
+              
+            }
+          }
+          
+          @keyframes rotate{
+            from{transform:rotateY(-180deg)}
+            50%{transform:rotateY(0deg)}
+            to{transform:rotateY(180deg)}
+          }
+  
+          
+           h1 span:nth-child(2) {
+            animation-delay: 0.1s;
+          }
+          h1 span:nth-child(3) {
+            animation-delay: 0.2s;
+          }
+          h1 span:nth-child(4) {
+            animation-delay: 0.3s;
+          }
+          h1 span:nth-child(5) {
+            animation-delay: 0.4s;
+          }
+          h1 span:nth-child(6) {
+            animation-delay: 0.5s;
+          }
+          h1 span:nth-child(7) {
+            animation-delay: 0.6s;
+          }
+          h1 span:nth-child(8) {
+            animation-delay: 0.7s;
+          }
+          h1 span:nth-child(9) {
+            animation-delay: 0.8s;
+          }
+          h1 span:nth-child(10) {
+            animation-delay: 0.9s;
+          } 
+  
+          @keyframes bounce {
+            100% {
+              position:relative;
+            
+              text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+               0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
+                 0 8px 0 #ccc, 0 9px 0 #ccc,
+                0 50px 25px rgba(0, 0, 0, 0.2);
+            }
           }
         }
       
