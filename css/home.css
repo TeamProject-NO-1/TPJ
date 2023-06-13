@@ -60,10 +60,10 @@ html, body{
 
   /* next */
   #next {
-    width: 5%;
+    width: 6%;
     position: absolute;
     top: 45%;
-    right: 6%;
+    right: 4%;
   }
   #next:hover {
     width: 7%;
