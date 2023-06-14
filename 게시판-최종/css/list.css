@@ -70,6 +70,7 @@ tr, td {
 #title_text{
   height:60%;
   margin:10px 0px;
+  resize: none;
 }
 #title_name{
   height:10%;
@@ -117,6 +118,8 @@ tr, td {
   position:absolute;
   left:80px;
 }
+
+
 @keyframes rotate{
   from{transform:rotateY(-180deg);
       text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
