@@ -5,34 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list</title>
-    <link rel="stylesheet" href="./css/list.css" />
+    <link rel="stylesheet" href="/css/list.css" />
     <script src="./js/list.js"></script>
   </head>
   <body>
-    <div class="container">
-      <img id="img6" src="/img/text/Vector 5.png" alt="" />
-    </div>
-    <!-- 이미지들 -->
-    <img id="img1" src="/img/list/오른쪽으로 기운 접힌문서.png" alt="" />
-    <a href="/contents.html"
-      ><img id="img2" src="/img/list/pre.png" alt=""
-    /></a>
-    <img id="img3" src="/img/list/왼쪽으로 기운 접힌문서.png" alt="" />
-    <img id="img4" src="/img/list/우측하래 삐죽.png" alt="" />
-    <img id="staffbase" src="/img/home/Staffbase.png" alt="" />
-    <img id="start" src="/img/list/start.png" />
-    <!-- // 이미지들 -->
-
-    <!-- 내용부분 -->
-    <div class="All">
-      <h1>
-        <span>L</span>
-        <span>I</span>
-        <span>S</span>
-        <span>T</span>
-      </h1>
-      <div class="Table_Area">
-        <table>
+    <div id="container">
+      <div id="head">
+        <h2 id="list">
+          <span>L</span>
+          <span>I</span>
+          <span>S</span>
+          <span>T</span>
+        </h2>
+      </div>
+      <div id="left">
+        <a href="/contents.html">
+          <img id="pre" src="/img/list/pre.png" alt="" />
+        </a>
+      </div>
+      <div id="center">
+        <table id="table">
           <tr>
             <td>글번호</td>
             <td>제목</td>
@@ -42,14 +34,33 @@
           </tr>
         </table>
       </div>
+
+      <!-- center2 -->
+      <div id="center2">
+        <input id="title_input" type="text" placeholder="제목자리" />
+        <textarea
+          id="title_text"
+          cols="30"
+          rows="10"
+          placeholder="내용을 입력하시오"
+        ></textarea>
+        <input id="title_name" type="text" placeholder="닉넴자리" />
+        <button id="update">등 록</button>
+      </div>
+
+      <!-- right -->
+      <div id="right">
+        <h2 id="new">
+          <a href="/text.html">
+            <span>N</span>
+            <span>E</span>
+            <span>W</span>
+          </a>
+        </h2>
+      </div>
+      <div id="footer">
+        <img id="staffbase" src="/img/home/Staffbase.png" alt="" />
+      </div>
     </div>
-    <!-- // 내용부분 -->
-    <a href="/text.html">
-      <h2>
-        <span>N</span>
-        <span>E</span>
-        <span>W</span>
-      </h2>
-    </a>
   </body>
 </html>

@@ -1,272 +1,247 @@
-/* 전체 윤곽 */
-        html, body {
-            position:absolute;
-            width: 100%;
-            height: 100%;
-        }
+html, body{
+  width: 100%;
+  height: 100%;
+}
+#container{
+  /* border:1px solid #e61111; */
+  display:flex;
+  width:100%;
+   height:100%; 
+  flex-wrap:wrap;
+  background-color: #ffd233;
+  
+}
 
-        body {
-            background-color: rgb(255, 210, 51);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+/* left */
+#left{
+  /* border:1px solid #ccc; */
+  width:15%;
+  height:79%;
+  position:relative; 
+}
+#pre{
+  max-width:60%;
+  position:absolute;
+  top:30%;
+  left:10%;
+  filter: drop-shadow(10px 10px 1px
+rgba(21, 18, 221, 0.25));
+}
 
-        /* 전체박스 감싸기 */
-        .All {
-            width: 90%;
-            height: 90%;
-            padding: 0 3%;
-        }
+/* table */
+#center{
+  /* border:1px solid #ccc; */
+   width:69%; 
+  /* height:50%; */
+  position:relative;
+}
+table {
+  position:absolute;
+  top:5%;
+  width: 100%;
+  text-align: center;
+  filter: drop-shadow(10px 10px 1px
+rgba(21, 18, 221, 0.25));
+}
+tr, td {
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 2px;
+  padding: 10px;
+}
 
-        /* 제목 부분 */
-        p {
-            font-size: 60px;
-            font-weight: bold;
-        }
+/* center2 */
+#center2{
+  /* border:1px solid #ccc; */
+  width:400px;
+  /* height:50%; */
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  margin-left:30px;
+  display:none;
+}
+#title_input{
+  height:10%;
+  margin-top:10px;
+}
+#title_text{
+  height:60%;
+  margin:10px 0px;
+}
+#title_name{
+  height:10%;
+}
+#update{
+  height:8%;
+  margin-top:30px;
+}
 
-        /* 표 부분 */
-        table {
-            width: 100%;
-            text-align: center;
-            filter: drop-shadow(10px 10px 1px
-     rgba(21, 18, 221, 0.25));
-        }
 
-        tr, td {
-            font-weight: bold;
-            background-color: white;
-            border: 3px solid black;
-            border-radius: 3px;
-            box-shadow: 1px 2px;
-            padding: 10px;
-        }
+/* new텍스트 */
+#right{
+  /* border:1px solid #ccc; */
+  width:40%;
+  /* height:50%; */
+  position:relative;
+}
+#new{
+  position:absolute;
+  bottom:60px;
+  left:10%;
+  padding:0;
+}
+#new span{
+  animation: rotate 1.5s ease infinite alternate;
+  font-family:"Titan one",cursive;
+  font-size:2.0em;color:#f3eeee;
+  text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
+  0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
+  0 6px 0 transparent,0 7px 0 transparent,
+  0 8px 0 transparent,0 9px 0 transparent,
+  0 10px 10px rgba(0,0,0,0.4);
+}
+#new span:nth-child(1) {
+  animation-delay: 0.5s;
+  position:absolute;
+}
+#new span:nth-child(2) {
+  animation-delay: 0.7s;
+  position:absolute;
+  left:40px;
+}
+#new span:nth-child(3) {
+  animation-delay: 0.9s;
+  position:absolute;
+  left:80px;
+}
+@keyframes rotate{
+  from{transform:rotateY(-180deg);
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+      0 3px 0 #ccc, 0 4px 0 #ccc,
+       0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
+        0 8px 0 #ccc, 0 9px 0 #ccc,
+       0 50px 25px rgba(0, 0, 0, 0.2);}
+  50%{transform:rotateY(0deg)}
+  to{transform:rotateY(180deg)}
+}
 
-        /* 이미지들 */
-        :is(#img1, a, #img3, #img4, #img5, #img6) {
-            position: absolute;
-            
-        }
 
-        /* 상단메모 */
-        #img1 {
-            width:10%;
-            height:auto;
-            top: 6%;
-            left: 70%;
-            filter: drop-shadow(10px 10px 1px
-     rgba(21, 18, 221, 0.25));
-     animation:scale1 1.0s ease infinite alternate;
-        animation-delay: 0.6s;
-        }
-        @keyframes scale1 {100%{
-            width:12%;
-          }}
-
-        /* arrow left */
-        a {
-            max-width: 9%;
-            top: 78%;
-            left: 5%;
-            filter: drop-shadow(10px 10px 1px
-     rgba(21, 18, 221, 0.25));
-        }
-
-        #img2 {
-            width: 80%;
-            
-        }
-
-        #img2:hover {
-            width: 90%;
-        }
-
-        /* 왼쪽 메모 */
-        #img3 {
-            width: 12%;
-            top: 80%;
-            left: 30%;
-            filter: drop-shadow(10px 10px 1px
-     rgba(21, 18, 221, 0.25));
-     animation:scale3 1s ease infinite alternate;
-        animation-delay: 1.5s;
-        }
-
-      @keyframes scale3 {100%{
-        width:12%;
-      }}
-        /* right boom */
-        #img4 {
-            width: 12%;
-            top: 75%;
-            left: 70%;
-            filter: drop-shadow(10px 10px 1px
-     rgba(21, 18, 221, 0.25));
-     animation:scale3 1s ease infinite alternate;
-     animation-delay: 0.3s;
-     }
-
-   @keyframes scale3 {100%{
-     width:16%;
-   }}
-
-        
-        /* 테두리 */
-        #img6 {
-            width: 95%;
-            height: 95%;
-            top: 3%;
-            left: 2%;
-            
-        }
-
-        /* 리스트 */
-       h1{
-        position:relative;
-        animation:bounce 0.7s ease infinite alternate;
-       }
-        h1 span{
-            animation:bounce 0.7s ease infinite alternate;
-            font-family:"Titan one",cursive;
-            font-size:2.0em;color:#f3eeee;
-            text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
-            0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
-            0 6px 0 transparent,0 7px 0 transparent,
-            0 8px 0 transparent,0 9px 0 transparent,
-            0 10px 10px rgba(0,0,0,0.4);
-          }
-          h1 span:nth-child(0) {
-            animation-delay: 0.3s;
-          }
-          h1 span:nth-child(1) {
-            animation-delay: 0.5s;
-          }
-          h1 span:nth-child(2) {
-            animation-delay: 0.7s;
-          }
-          h1 span:nth-child(3) {
-            animation-delay: 0.9s;
-          }
+/* list */
+#head{
+  /* border:1px solid #ccc; */
+  width:100%;
+  height:10%;
+  position:relative;
+}
+#list{
+  position:absolute;
+  top:-10px;
+  left:5%;
+  animation:bounce 0.7s ease infinite alternate;
+ }
+  #list span{
+      animation:bounce 0.7s ease infinite alternate;
+      font-family:"Titan one",cursive;
+      font-size:2.5em;color:#f3eeee;
+      text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
+      0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
+      0 6px 0 transparent,0 7px 0 transparent,
+      0 8px 0 transparent,0 9px 0 transparent,
+      0 10px 10px rgba(0,0,0,0.4);
+    }
+    #list span:nth-child(1) {
+     
+      top:10px;
+      
+      animation-delay: 0.3s;
+    }
+    #list span:nth-child(2) {
+      animation-delay: 0.5s;
+     
+      top:10px;
+    }
+    #list span:nth-child(3) {
+      animation-delay: 0.7s;
+      
+     top:10px;
+    }
+    #list span:nth-child(4) {
+      animation-delay: 0.9s;
+      
+      top:10px;
+      
+    }
+    
+    @keyframes bounce {
+      100% {
+          position:relative;
           
-          @keyframes bounce {
-            100% {
-                position:relative;
-                
-              text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-               0 3px 0 #ccc, 0 4px 0 #ccc,
-                0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
-                 0 8px 0 #ccc, 0 9px 0 #ccc,
-                0 50px 25px rgba(0, 0, 0, 0.2);
-            }
-          }
-        
-          /* staffbase */
-          #staffbase {
-            max-width: 25%;
-            position: absolute;
-            bottom: 6%;
-            right: 5%;
-            filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
-          }
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+         0 3px 0 #ccc, 0 4px 0 #ccc,
+          0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
+           0 8px 0 #ccc, 0 9px 0 #ccc,
+          0 50px 25px rgba(0, 0, 0, 0.2);
+      }
+    }
 
-          /* new  */
-          h2{
-            position:absolute;
-            bottom:0%;
-            left:0%;
-            
-          }
-          h2 span{
-            position:absolute;
-            animation: rotate 1.5s ease infinite alternate;
-            font-family:"Titan one",cursive;
-            font-size:2.0em;color:#f3eeee;
-            text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,
-            0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,
-            0 6px 0 transparent,0 7px 0 transparent,
-            0 8px 0 transparent,0 9px 0 transparent,
-            0 10px 10px rgba(0,0,0,0.4);
-          }
-          h2 span:nth-child(0) {
-            animation-delay: 0.5s;
-          }
-          h2 span:nth-child(1) {
-            animation-delay: 0.7s;
-          }
-          h2 span:nth-child(2) {
-            animation-delay: 0.9s;
-          }
-          h2 span:nth-child(3) {
-            animation-delay: 1.1s;
-          }
-          h2 span:nth-child(4) {
-            animation-delay: 1.3s;
-          }
-          h2 span:nth-child(5) {
-            animation-delay: 1.5s;
-          }
-          h2 span:nth-child(6) {
-            animation-delay: 1.7s;
-          }
-                  
-          @keyframes rotate{
-            from{position:relative;transform:rotateY(-180deg);
-                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-                0 3px 0 #ccc, 0 4px 0 #ccc,
-                 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc,
-                  0 8px 0 #ccc, 0 9px 0 #ccc,
-                 0 50px 25px rgba(0, 0, 0, 0.2);}
-            50%{position:relative;transform:rotateY(0deg)}
-            to{position:relative;transform:rotateY(180deg)}
-          }
+    
+    /* staffbase */
+    #footer{
+      /* border:1px solid #ccc; */
+      width:57%;
+      height:10%;
+      position:relative;
+  }
+  #staffbase {
+      max-width: 50%;
+      position: absolute;
+      bottom: 20px;
+      right: 5%;
+      filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25));
+    }
 
-          #start{
-            display:none;
-          }
-          /* 반응형 */
-          @media screen and (min-width:1500px) {
+    /* 반응형 */
+    @media screen and (min-width:1300px) {
+      #center{
+        width:50%;
+      }
+      #center2{
+        display:block;
+        /* border:1px solid #ccc; */
+      width:400px;
+      /* height:50%; */
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      margin-left:30px;
+     
+      }
+      
+    
+    #title_input{
+      height:10%;
+      margin-top:10px;
+      filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25)); 
+    }
+    #title_text{
+      height:60%;
+      margin:10px 0px;
+      filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25)); 
+    }
+    #title_name{
+      height:10%;
+      filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25)); 
+    }
+    #update{
+      height:8%;
+      margin-top:30px;
+      filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.25)); 
+    }
 
-            #img1{
-                display:none;
-            }
-            #img3{
-                display:none;
-            }
-            #img4{
-                display:none;
-            }
-            #img6 {
-                display:none;
-            }
-            body {
-            background-color: rgb(139, 51, 255);
-        }
-
-        .Table_Area{
-            width:90%;
-        }
-
-        #start{
-          
-            display:block;
-            animation:moveIn 2.0s,
-          }
-          
-          
-          
-          @keyframes moveIn{
-            from{
-              position:relative;
-              left:-10%;
-            }
-            to{
-                position:relative;
-              top:42%;
-            }
-          }
-
-          }
-          
-
-        
-        
+    #staffbase{
+      display:none;
+    }
+    }
