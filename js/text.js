@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const titleInput = document.getElementById("title_input")
     const titleText = document.getElementById("title_text")
     const titleName = document.getElementById("title_name")
-    const 등록버튼 = document.getElementById("update")
+    const 등록 = document.getElementById("update")
 
     /* localStorage 부분 */
     // 제목, 작성자, 작성일자를 객체로 저장해서 list.html에서 쓴다
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let arr = JSON.parse(localStorage.getItem('input')) ?? []
 
     /* 등록버튼을 누르면 -> localStroage에 저장되게하는 부분 */
-    등록버튼.addEventListener('click', () => {
+    등록.addEventListener('click', () => {
       /* 날짜를 받아오기 위해서 */
       /* new Date() 사용 => 'today.get~()'를 사용하기 위해 */
       let today = new Date();
